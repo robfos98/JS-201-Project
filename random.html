@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        "use strict";
+        let guess = 0;
+        while(true) {
+            const x = 1 + Math.floor(10 * Math.random());
+            if(guess) { guess = Number(prompt("Nope! Guess a new number between 1 and 10.")); }
+            else { guess = Number(prompt("Guess a number between 1 and 10.")); }
+            if(x === guess) { break; }
+        }
+    </script>
+</body>
+</html>
